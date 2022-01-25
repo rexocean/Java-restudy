@@ -9,4 +9,8 @@ public interface IntSequence {
     boolean hasNext();
 
     int next();
+
+    static IntSequence digitsOf(int n) {
+        return new DigitSequence(n);
+    }
 }
